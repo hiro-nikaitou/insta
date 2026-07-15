@@ -678,7 +678,10 @@ impl<'a> SnapshotAssertionContext<'a> {
         {
             println!(
                 "{hint}",
-                hint = style("To update snapshots run `cargo insta review` or set `INSTA_UPDATE=always`").dim(),
+                hint = style(
+                    "To update snapshots run `cargo insta review` or set `INSTA_UPDATE=always`"
+                )
+                .dim(),
             );
         }
 
